@@ -37,7 +37,7 @@ thread = None
 @bot.event
 async def on_ready():
     print(f'{bot.user.name} has connected to Discord!')
-    guild = bot.get_guild(1092120570688176299)
+    guild = bot.get_guild("Insert Guild ID")
     bot_member = guild.get_member(bot.user.id)
     await bot_member.edit(nick=char_name)
 
